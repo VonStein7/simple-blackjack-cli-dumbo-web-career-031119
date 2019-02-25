@@ -40,22 +40,22 @@ end
 
 def hit?(currTotal)
   # code hit? here
-  #prompt_user
-  #choice = get_user_input
+  prompt_user
+  choice = get_user_input
   
-  #if(choice != 'h' || 's')
-  #  until choice == 'h' || 's'
-  #    invalid_command
-  #    prompt_user
-  #    choice = get_user_input
-  #  end
-  #end
+  if(choice != 'h' || 's')
+    until choice == 'h' || 's'
+      invalid_command
+      prompt_user
+      choice = get_user_input
+    end
+  end
 
-  #if choice == 'h' 
-  #  deal_card
-  #end
+  if choice == 'h' 
+    deal_card
+  end
   
-  #return display_card_total
+  return display_card_total
 end
 
 def invalid_command
