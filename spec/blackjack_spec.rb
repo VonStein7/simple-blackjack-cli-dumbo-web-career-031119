@@ -42,7 +42,7 @@ end
 describe "#get_user_input" do
   it "returns the value of a `gets.chomp` method" do
     ["h", "s", "exit"].each do |string|
-      expect(self).to receive(:gets).and_return(string)
+      expect(self).to receive("s").and_return(string)
       expect(get_user_input).to eq(string)
     end
   end
