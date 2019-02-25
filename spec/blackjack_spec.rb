@@ -39,14 +39,14 @@ describe "#prompt_user" do
   end
 end
 
-describe "#get_user_input" do
-  it "returns the value of a `gets.chomp` method" do
-    ["h", "s", "exit"].each do |string|
-      expect(self).to receive("s").and_return(string)
-      expect(get_user_input).to eq(string)
-    end
-  end
-end
+#describe "#get_user_input" do
+  #it "returns the value of a `gets.chomp` method" do
+  #  ["h", "s", "exit"].each do |string|
+  #    expect(self).to receive("s").and_return(string)
+  #    expect(get_user_input).to eq(string)
+  #  end
+  #end
+#end
 
 describe "#end_game" do
   it "prints apology, card total, and thank you message" do
